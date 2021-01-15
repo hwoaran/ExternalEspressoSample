@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.test'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+
+        testApplicationId "yandex.auto.baseapptest"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    targetProjectPath ':baseapp:app'
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'androidx.test.ext:truth:1.3.0'
+    implementation 'androidx.test.ext:junit:1.1.2'
+    implementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.test:core:1.3.0'
+    implementation 'androidx.test:runner:1.3.0'
+    implementation 'androidx.test:rules:1.3.0'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}

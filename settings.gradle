@@ -1,0 +1,7 @@
+include ':baseapp'
+include ':baseapp:app'
+include ':baseapp:app-tests'
+
+include ':uitests'
+
+project(':baseapp:app-tests').projectDir = new File("uitests/baseapptest")
